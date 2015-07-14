@@ -21,7 +21,7 @@
 		<div class="container">
 			<div class="jumbotron">
 				<h1 class="text-center">What is your question ?</h1>
-				<form onsubmit="initapp()" action='#'>
+				<form onsubmit="answer()" action='#'>
 					<input type="text" class="form-control" placeholder="Your question here..."/>
 					<button type="submit" class="center-block btn btn-primary" style="margin-top: 10px; margin-bottom: 10px;">submit</button>
 				</form>
@@ -37,12 +37,48 @@
 		<script src="lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 		<script>
 			var ans = [];
-			ans.push('Definitly!');
-			ans.push('Go for it.');
-			ans.push('Maybe');
-			ans.push('Wait until full moon and ask me again.');
+			ans.push('definitly!');
+			ans.push('go for it.');
+			ans.push('maybe');
+			ans.push('wait until full moon and ask me again.');
+			ans.push('Whiskey says meow');
+			ans.push('ask your mum');
+			ans.push('if before lunch: yes, if after lunch: no');
+			ans.push('no!');
+			ans.push('better not');
+			ans.push('not sure');
+			ans.push('perhaps');
+			ans.push("I don't understand your question.");
+			ans.push('please rephrase');
+			ans.push('Do not pass Go. Do not collect $200.');
+			ans.push('people will laugh when you do');
+			ans.push('just once in a blue moon');
+			ans.push('if it pleases you');
+			ans.push('outlook is good');
+			ans.push('better not tell you now');
+			ans.push('very doubtfull');
+			ans.push('my sources say no');
+			ans.push('Pffff... how should I know');
+			ans.push('you may rely on it');
+			ans.push('i!!^x*(&(\\|#Q*$#)');
+			ans.push('error');
+			ans.push('возможно');
+			ans.push('outcome hazy');
+			ans.push('ask again after three more vodkas')
+			ans.push('as I see it, yes');
+			ans.push('my reply is no');
+			ans.push('Why do you ask?');
+			ans.push('sounds like fun');
+			ans.push("yes, but don't tell anyone");
+			ans.push('you have to ask?');
+			ans.push('insert another coin and ask again');
+			ans.push('do as you please');
+			ans.push('you will benefit');
+			ans.push('only the brave will do this');
+			ans.push("I'm sorry. You should not do that.'")
+			ans.push('ask siri');
 
-			function initapp() {
+			function answer() {
 				ansernumber = Math.floor(Math.random()*ans.length  + 1);
 				$('#randomanswer').text(ans[ansernumber]);
 				$('#answerdiv').removeClass('hidden');
